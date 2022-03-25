@@ -9,6 +9,6 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
+  public tarefa = "";
   public items = ['item 1', 'item 2', 'item 3'];
 }
