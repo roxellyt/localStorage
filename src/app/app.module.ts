@@ -1,13 +1,19 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, Home ],
-  bootstrap:    [ AppComponent ]
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot([{ path: 'home', component: HomeComponent }]),
+  ],
+  declarations: [AppComponent, HelloComponent, HomeComponent],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
