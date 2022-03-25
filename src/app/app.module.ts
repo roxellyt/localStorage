@@ -11,7 +11,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot([{ path: 'home', component: HomeComponent }]),
+    RouterModule.forRoot([{ path: '', component: HomeComponent }]),
   ],
   declarations: [AppComponent, HelloComponent, HomeComponent],
   bootstrap: [AppComponent],
