@@ -11,4 +11,12 @@ export class HomeComponent implements OnInit {
   ngOnInit() {}
   public tarefa = "";
   public items = ['item 1', 'item 2', 'item 3'];
+  
+  addTarefa(){
+    this.items.push(this.tarefa);
+  }
+  remover(){
+    
+  }
 }
+
