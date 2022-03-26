@@ -9,14 +9,13 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-  public tarefa = "";
+  public tarefa = '';
   public items = ['item 1', 'item 2', 'item 3'];
-  
-  addTarefa(){
+
+  addTarefa() {
     this.items.push(this.tarefa);
   }
-  remover(item){
-    this.items.splice(this.items.indexOf(item), 1)
+  remover(item) {
+    this.items.splice(this.items.indexOf(item), 1);
   }
 }
-
