@@ -15,8 +15,8 @@ export class HomeComponent implements OnInit {
   addTarefa(){
     this.items.push(this.tarefa);
   }
-  remover(){
-    
+  remover(item){
+    this.items.splice(this.items.indexOf(item), 1)
   }
 }
 
