@@ -8,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.tarefa = localStorage.getItem('item');
+  }
   public tarefa = '';
   public items = ['item 1', 'item 2', 'item 3'];
 
   addTarefa() {
     this.items.push(this.tarefa);
+    localStorage.setItem('item', this.tarefa);
   }
   remover(item) {
     this.items.splice(this.items.indexOf(item), 1);
