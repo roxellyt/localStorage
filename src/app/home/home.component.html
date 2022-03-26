@@ -1,9 +1,12 @@
 <h2 style="text-align:center;">To do list + LocalStorage</h2>
+<p style="text-align:center;">
+  {{ tarefa }}
+</p>
+<br />
+<br />
 
-{{tarefa}}
-  <input type="text" [(ngModel)]="tarefa" >
-  <button (click)="addTarefa()">Adicionar</button>
-
+<input type="text" [(ngModel)]="tarefa" />
+<button (click)="addTarefa()">Adicionar</button>
 
 <ul>
   <li *ngFor="let item of items">
