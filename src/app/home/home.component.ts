@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
     this.tarefa = localStorage.getItem('item');
   }
   public tarefa = '';
-  public items = ['item 1', 'item 2', 'item 3'];
+  public items = [];
 
   addTarefa() {
     this.items.push(this.tarefa);
